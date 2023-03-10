@@ -1,1 +1,10 @@
-body{background-color: rgb(136, 81, 238);}
+body{background-color: rgb(136, 81, 238);
+}
+img{
+    width: 200px; /*ancho de la imagen*/
+    height: 200px; /*alto de la imagen*/
+}
+
+tr:hover{
+    background-color: aliceblue;
+}
