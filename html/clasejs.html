@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    HOLA BIENVENIDO 
+    <input type="text" id="valor" placeholder="escriba">
+    <button id="btn_enviar" onclick="calcular()">ENVIAR</button>
+    <h1 id="titulo"></h1>
+    <Script>
+       
+       //VARIABLES// + - * / % 
+       const nameuno = "cualquier cosa";
+       var numero_dos = "calquier cosa";
+       let numerTres = "cualquier cosa";
+       
+       // TIPOS DDE DATOS//
+       let num_a = 5;
+       let num_b = 10.2;
+       let boolean = false;
+       let stringvar = "HOLA SOY UN STRING";
+       let arraynum = [1,2,3,4,5,"6","7","8"];
+       let dias_semana = ["luenes","martes","miercoles","jueves","viernes","sabado","domingo"];
+       let users = [
+           {name:"joseph", last_name:"arevalo", age:20},
+           {name:"jamid", last_name:"alvernia", age:20},
+           {name:"rafael", last_name:"orozco", age:20}
+    
+       ]
+       //OPERADORES MATEMATICOS///
+       let suma  = num_a + num_b;
+       let resta = num_b - num_a;
+       let multi = num_a * num_b;
+       let divi  = num_b / num_a;
+       let modole = num_b % num_a;
+       let expon  = num_a ^ num_b;
+       resta= Math.round(resta);
+       console.log("suma :"+ suma +"\nresta :"+ resta + "\nmultiplicacion :"+multi)
+       let  concatenar  = "suma :".concat (suma);
+       console.log(concatenar);
+       //OPERADORES DE COMPARACION// < / > / >= / <= / = /==
+       // OPERADORES LOGICOS : TERNARIO ? / and && 7 or / 
+       var elvisLives = Math.pi > 4 ? "sip" : "nop";
+       console.log(elvisLives);
+       let operador  = true;
+       console.log(!operador);
+       //ESTRUCUTRA CONDICIONALES : IF / ELSE / ELSEIF //
+       let cantarray = arraynum.length;
+       console.log(cantarray);
+       if(cantarray > 7){
+        console.log(cantarray);
+        console.log(arraynum[4]);
+        console.log(dias_semana[2]);
+        console.log(dias_semana);
+        console.log(users[0].name);
+
+        for(let i=0; i<dias_semana.length;i++){
+            console.log(dias_semana[i]);
+
+        }
+
+       }
+       let i=0;
+       while(users.length){
+       console.log(users[i].name)
+       i++;
+    }
+    function calcular(){
+        let namevar = document.getElementById("valor").value;
+        namevar = namevar.toUpperCase();
+        document.getElementById("titulo").innerText = namevar;
+    }
+    document.getElementById("btn_enviar").addEventListener("click",function () {
+        document.getElementById("titulo").style.color = "red";
+        document.getElementById("titulo").style.backgroundColor = "aqua";        
+    })
+
+      
+   
+
+
+
+
+
+    </Script>
+
+</body>
+</html>
