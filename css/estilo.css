@@ -46,7 +46,6 @@ nav {
 .enlaces-header {
     font-weight: 300;
     margin: auto;
-    transition: all ease-in-out .6s;
 }
 
 .nav .enlaces-header a {
@@ -62,23 +61,7 @@ nav {
     background-color: #d03d3d;
     border-color: #d03d3d;
     transition: all ease-in-out .5s;
-    
 }
-.hamburguer{
-    height: 80px;
-    width: 80px;
-    text-align: center;
-    z-index: 100;
-    cursor: pointer;
-    transition: color o.5s ease-in;
-    display: none;
-}
-.hamburguer > i{
-    font-size: 25px;
-    line-height: 80px;
-}
-   
-
 
 .titulospro {
     text-align: left;
@@ -132,10 +115,14 @@ nav {
     font-size: 16px;
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
+
+
 }
-/*xxxxxxxxxxxxx EDUCACION XXXXXXX*/
+/*  ##########################education ##########################*/
 .section-education{
-    background-color: #5d6678;
+    background-color: #dbdbdb;
+
+
 }
 .section-education .title{
     display: block;
@@ -143,14 +130,12 @@ nav {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-
 }
 .content-education{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 30px;
-
 
 }
 .education{
@@ -158,40 +143,38 @@ nav {
     background-color: #fff;
     border-radius: 8px;
     padding: 30px;
-
 }
 .education i{
     border: 2px solid #d03d3d;
     border-radius: 50%;
     background-color: #d03d3d;
     color: #fff;
-    width: 50px;
+    width: 40px;
     height: 40px;
     font-size: 22px;
     text-align: center;
     line-height: 36px;
-
-
 }
 .education:hover{
     background-color: #d03d3d;
     box-shadow: 0 0 8px gray;
-    transition: all ease-in-out;
+    transition: all ease-in-out .4s;
+    color: #fff;
 }
-.content-education.education a{
-    color: #5d6678;
+.content-education .education a{
+    color: gray;
     font-size: 12px;
     text-decoration: none;
 
 }
-.content-education.education a:hover{
-    background-color: #fff;
-    
+.content-education .education a:hover{
+    color: #fff;
 }
-/*xxxxxxxxxCERTIFICADOXXXX*/
+/*  ##########################cerfiticates ##########################*/
+
 .section-certificates .title{
     display: block;
-    margin: 15px 0;
+    margin: 15px 0 0 0;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -199,12 +182,12 @@ nav {
 .content-certificates{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 30px;
-    
+
 }
 .certificates{
-    width: 22px;
+    width: 22%;
     border-radius: 5px;
     border: 2px solid #d03d3d;
     padding: 15px;
@@ -215,63 +198,64 @@ nav {
 .certificates img{
     height: 80px;
     width: auto;
-
 }
 .certificates a{
     font-size: 12px;
-    color: #5d6678;
+    color: gray;
     text-decoration: none;
 
 }
 .certificates:hover{
     background-color: #d03d3d;
-    box-shadow: 0 0 8px #5d6678;
-    transition: all ease-in-out;
+    box-shadow: 0 0 8px gray;
+   
     color: #fff;
-    transform: scale(1.0);
-
-
+    transform: scale(1.1);
+    transition: all ease-in-out .7
+}
+.certificates a:hover{
+    color: #fff;
 }
 
-
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-footer {
-    background-color: rgb(70, 70, 70);
+/*  ##########################pie de pagina ##########################*/
+footer{
+    background-color: rgb(70,70,70);
     padding: 50px 0 20px 0;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
-}
 
-.partFooter {
+
+    
+
+}
+.partfooter{
     width: 22%;
     text-align: center;
-}
 
-.partFooter img {
+}
+.partfooter img {
     width: 60%;
 }
-
-.partFooter h4 {
+.partfooter h4{
     color: #fff;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400px;
     margin-bottom: 15px;
     background-color: #d03d3d;
     padding: 5px 0;
     border: 1px solid #d03d3d;
     border-radius: 5px;
-}
 
-.contact {
+}
+.contact{
     margin: 10px;
     display: block;
     text-align: left;
 }
-
-.contact > i {
+.contact > i{
     float: left;
     margin: 0 0 0 10px;
     color: #fff;
@@ -282,17 +266,17 @@ footer {
     line-height: 28px;
     text-align: center;
     align-items: center;
-}
 
-.contact > p {
+}
+.contact > p{
     margin-left: 50px;
     align-items: center;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 500px;
     color: #fff;
-}
 
-.partFooter > a {
+}
+.partfooter > a {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -300,39 +284,41 @@ footer {
     font-weight: 500;
     padding: 5px;
 }
-
-.partFooter > a:hover {
+.partfooter > a:hover {
     background-color: #d03d3d;
-    border-color: #d03d3d;
+    border-color: black;
     border-radius: 5px;
-    transition: all ease-in-out .6s;
-}
+    transition: all ease-in-out 0.6s;
 
+}
 .social-media > a > i {
     font-size: 20px;
     display: inline-block;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid white;
     width: 38px;
     height: 38px;
     line-height: 36px;
-    cursor: pointer;
+    cursor:pointer;
     margin-top: 20px;
     text-align: center;
     transition: all ease-in-out .3s;
     margin-right: 5px;
     border-radius: 50%;
-}
 
-.social-media > a > i:hover {
+}
+.social-media > a > i:hover{
     background-color: #d03d3d;
     border-color: #d03d3d;
+    
 }
-/*xxxxxxxxxxxxxx BREAKPOINTS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (max-width:700px) {
+/* #################### BREACKPOINTS #################### */
+
+@media screen and (max-width: 700px){
     .hamburguer{
         display: block;
     }
+
     .enlaces-header{
         position: fixed;
         background-color: #d03d3d;
@@ -344,29 +330,29 @@ footer {
         align-items: center;
         flex-direction: column;
         clip-path: circle(0.0% at 0 0);
-
     }
+
     .nav .hamburgueropen{
         clip-path: circle(150.0% at 0 0);
     }
+
     .nav .enlaces-header a{
         color: #fff;
-        background-color: #5d6678;
+        background-color: #e06262;
         text-transform: uppercase;
-        font-weight: -800;
+        font-weight: 800;
         width: 50%;
         text-align: center;
         margin-top: 20px;
-        
     }
 
     h1{
-        font-size: 28px;
-        margin-top: 10px;
-
+        font-size: 25px;
     }
+
     .textos-header{
         margin: 0px;
+        margin-top: 10px;
     }
 
     .contenido-header{
@@ -374,30 +360,30 @@ footer {
         height: auto;
         margin-bottom: 15px;
     }
-    .contenido-header > img{
-        margin: 25px 0 0 0;
-        width: 150px;
-        height: 150px;
-    }
-    /*xxxxxxxxxxxxxx SECTION EDUCATION xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
+    /* SECTION EDUCATION */
     .education{
-        width: 90%;
+        width: 80%;
         margin-bottom: 15px;
     }
-    /*xxxxxxxxxxxxxx SECTION SERTIFICATES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+    /* SECTION certificate */
+
     .certificates{
         width: 45%;
     }
+
     .certificates img{
         height: 80px;
     }
-    /*xxxxxxxxxxxxxx SECTION FOOTER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-    .partFooter img{
-        display: none;  
-    }
-    .partFooter{
-        width: 90%;
+
+    /* SECTION footer */
+
+    .partFooter > img{
+        display: none;
     }
 
+    .partFooter{
+        width: 80%;
+    }
 }
+   
